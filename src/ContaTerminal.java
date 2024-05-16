@@ -28,6 +28,20 @@ public class ContaTerminal {
  
              System.out.println("Por gentileza, insira o valor do saldo em conta:");
              saldoDaConta = scEntrada.nextDouble();
+
+            // Sistema retorna uma mensagem de saudação padrão ao correntista com os dados inseridos anteriormente
+            mensagemFinal = mensagemFinal.concat("Olá ").concat(nomeCliente)
+                    .concat(", obrigado por criar uma conta em nosso banco, sua agência é ")
+                    .concat(numeroAgencia).concat(", conta ").concat(String.valueOf(numeroConta)).concat(" e seu saldo ")
+                    .concat(String.valueOf(saldoDaConta)).concat(" já está disponível para saque!");
+            System.out.println(mensagemFinal);
+
+            
+            // Versão 2 utilizando o operador de concatenação "+"
+            // System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em " +
+            // "nosso banco, sua agência é " +
+            // numeroAgencia + ", conta " + numeroConta + " e seu saldo " + saldoDaConta
+            // + " já está disponível para saque!");
  
         }
     }
